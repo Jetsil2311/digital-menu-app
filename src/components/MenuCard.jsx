@@ -17,9 +17,11 @@ export const MenuCard = ({ name, long_desc, desc, price, flavors, image, id }) =
         setIsDropdownOpen(!isDropdownOpen);
     };
 
+    const BASE_URL = import.meta.env.BASE_URL;
+
     return (
         <li className='list-group-item col-12 col-md-6 col-lg-4 bg-dark py-3 px-3 mx-2 my-3 d-flex align-items-center'>
-            <img className='img-fluid w-25 rounded-3 border border-primary' src={`products/${id}${image}`} alt={name} />
+            <img className='img-fluid w-25 rounded-3 border border-primary' src={BASE_URL + `products/${id}${image}`} alt={name} />
             <div className='mx-2'>
                 <h4>{name}</h4>
                 <p className='text-info small'>{desc}</p>
