@@ -7,7 +7,7 @@ export const products = [
         long_desc: '7 tiras de chicharron de cerdo acompañadas de guacamole y salsa de tomate',
         price: 70,
         flavors: ['Chile', 'Limon', 'Sal'],
-        image: '/src/assets/products/0.jpg'
+        image: '/public/0.jpg'
     },
     {
         id: 1,
@@ -17,7 +17,7 @@ export const products = [
         long_desc: 'Lechuga, pollo, croutones, aderezo cesar y queso parmesano',
         price: 90,
         flavors: ['Cesar', 'Mostaza', 'Ranch'],
-        image: '/src/assets/products/1.jpg'
+        image: '/public/1.jpg'
     },
     {
         id: 2,
@@ -26,7 +26,8 @@ export const products = [
         desc: '210g',
         long_desc: 'Pechuga de pollo a la parrilla con verduras al vapor',
         price: 150,
-        image: '/src/assets/products/2.jpg'
+        flavors: ['Pechuga', 'Pierna', 'Muslo'],
+        image: '/public/2.jpg'
     },
     {
         id: 3,
@@ -36,7 +37,7 @@ export const products = [
         long_desc: 'Cafe de olla',
         price: 25,
         flavors: ['Americano', 'Expresso', 'Latte'],
-        image: '/src/assets/products/3.jpeg'
+        image: '/public/3.jpeg'
     },
     {
         id: 4,
@@ -46,7 +47,7 @@ export const products = [
         long_desc: 'Limonada natural',
         price: 20,
         flavors: ['Natural', 'Fresa', 'Mango'],
-        image: '/src/assets/products/4.jpg'
+        image: '/public/4.jpg'
     },
     {
         id: 5,
@@ -56,7 +57,7 @@ export const products = [
         long_desc: 'Cerveza de barril',
         price: 30,
         flavors: ['Clara', 'Oscura', 'Ambar'],
-        image: '/src/assets/products/5.jpeg'
+        image: '/public/5.jpeg'
     },
     {
         id: 6,
@@ -66,7 +67,7 @@ export const products = [
         long_desc: '210g de Papas fritas cortadas a mano',
         price: 30,
         flavors: ['Sal', 'Chile', 'Limon'],
-        image: '/src/assets/products/6.jpg'
+        image: '/public/6.jpg'
     }
 
 ]
