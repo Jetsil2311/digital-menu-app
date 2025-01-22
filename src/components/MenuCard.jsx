@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
-export const MenuCard = ({ name, long_desc, desc, price, flavors, image }) => {
+export const MenuCard = ({ name, long_desc, desc, price, flavors, image, id }) => {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
     useEffect(() => {
@@ -17,11 +17,9 @@ export const MenuCard = ({ name, long_desc, desc, price, flavors, image }) => {
         setIsDropdownOpen(!isDropdownOpen);
     };
 
-    const img = `${image}`
-
     return (
         <li className='list-group-item col-12 col-md-6 col-lg-4 bg-dark py-3 px-3 mx-2 my-3 d-flex align-items-center'>
-            <img className='img-fluid w-25 rounded-3 border border-primary' src={image} alt={name} />
+            <img className='img-fluid w-25 rounded-3 border border-primary' src={`/products/${id}${image}`} alt={name} />
             <div className='mx-2'>
                 <h4>{name}</h4>
                 <p className='text-info small'>{desc}</p>

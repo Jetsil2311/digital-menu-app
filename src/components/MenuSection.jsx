@@ -11,7 +11,7 @@ export const MenuSection = ({children, desc}) => {
                     {
                         products.map((product) => {
                             if (product.section === children) {
-                                return <MenuCard key={product.id} name={product.name} desc={product.desc} price={product.price} img={product.img} long_desc={product.long_desc} flavors={product.flavors ? product.flavors : null} image={product.image} />
+                                return <MenuCard key={product.id} name={product.name} desc={product.desc} price={product.price} img={product.img} long_desc={product.long_desc} flavors={product.flavors ? product.flavors : null} image={product.image} id={product.id} />
                             }
                         })
                     }
