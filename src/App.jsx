@@ -13,7 +13,6 @@ export const App = () => {
 
                 <Route path='/menu/:category' element={<Navigate to='/'/>} />
                 <Route path='/menu' element={<Navigate to='/'/>} />
-                <Route path='/*' element={<Navigate to='/'/>} />
             </Routes>
         </>
     )
