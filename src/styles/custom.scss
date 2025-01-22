@@ -1,0 +1,29 @@
+
+$dark: #121212;
+$primary: #c48634;
+$secondary: #1e1e1e;
+$info: #676767;
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+.btn-category {
+    list-style: none;
+    font-size: 2em;
+    background-color: transparent;
+    color: $primary;
+    border: 1px solid $primary;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    &:hover {
+        background-color: $primary;
+        color: $light;
+    }
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1020; /* Ensure it stays above other content */
+}
