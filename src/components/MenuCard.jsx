@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
+//update
+ 
 export const MenuCard = ({ name, long_desc, desc, price, flavors, image, id }) => {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
