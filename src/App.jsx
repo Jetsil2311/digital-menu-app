@@ -3,6 +3,7 @@ import {Navigate, Route, Routes} from "react-router-dom";
 import {Home} from "./pages/Home.jsx";
 import {Menu} from "./pages/Menu.jsx";
 
+// Hi
 
 export const App = () => {
     return (
